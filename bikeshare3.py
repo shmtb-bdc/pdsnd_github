@@ -147,7 +147,7 @@ def trip_duration_stats(df):
     print('\nHow long are users renting the bikes?\n')
     start_time = time.time()
     
-    print('Based on your choices:\n')
+    print('Based on your choices, here is more information about the duration of these trips:\n')
     
     #Displays the total travel time for the selected criteria, displayed as hours and minutes
     total_travel_time = df['Trip Duration'].sum()
@@ -211,8 +211,8 @@ def user_stats(df):
     print('-'*40)
     
 def display_data(df):
-    #Displays raw data five rows at a time based on previously selected criteria; user can choose to see more rows or exit the function
-    #Validation is included to limit answers to 'yes' or 'no'
+#Displays raw data five rows at a time based on previously selected criteria; user can choose to see more rows or exit the function
+#Validation is included to limit answers to 'yes' or 'no'
     data_location = 0
     retrieve_data = str(input("Would you like to see the first five rows of raw data for your request? Yes or No")).lower()
     while True:
