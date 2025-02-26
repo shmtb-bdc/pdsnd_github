@@ -15,5 +15,5 @@ The files used include three .csv source files with city-specific data:
 In addition, the bikeshare3.py file contains the Python code created for the project.
 
 ### Credits
-I used the Python Standard Library (https://docs.python.org/3/library/index.html), the Pandas user guide (https://pandas.pydata.org/docs/user_guide/index.html), and Udacity course materials for this project.
+I used the Python Standard Library (https://docs.python.org/3/library/index.html), the Pandas user guide (https://pandas.pydata.org/docs/user_guide/index.html), and Udacity course materials for this project. Oops! I forgot that I also consulted _Python for Data Analysis_ by Wes McKinney.
 
