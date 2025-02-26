@@ -147,7 +147,7 @@ def trip_duration_stats(df):
     print('\nHow long are users renting the bikes?\n')
     start_time = time.time()
     
-    print('Based on your choices:\n')
+    print('Based on your choices, here is more information about the duration of these trips:\n')
     
     #Displays the total travel time for the selected criteria, displayed as hours and minutes
     total_travel_time = df['Trip Duration'].sum()
