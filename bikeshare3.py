@@ -210,21 +210,21 @@ def user_stats(df):
     print("\nThis took %s seconds." % round((time.time() - start_time),5))
     print('-'*40)
     
-def display_data(df):
+#def display_data(df):
     #Displays raw data five rows at a time based on previously selected criteria; user can choose to see more rows or exit the function
     #Validation is included to limit answers to 'yes' or 'no'
-    data_location = 0
-    retrieve_data = str(input("Would you like to see the first five rows of raw data for your request? Yes or No")).lower()
-    while True:
-        if retrieve_data == 'yes':
-            print(df.iloc[data_location : data_location + 5])
-            data_location += 5
-            retrieve_data = str(input("Would you like to see the next five rows? Yes or No")).lower()
-        if retrieve_data == 'no':
-            break
-        else:
-            print("Invalid input. Please enter Yes or No.")
-            retrieve_data = str(input("Would you like to see the next five rows? Yes or No")).lower()
+ #   data_location = 0
+ #   retrieve_data = str(input("Would you like to see the first five rows of raw data for your request? Yes or No")).lower()
+ #   while True:
+ #       if retrieve_data == 'yes':
+ #           print(df.iloc[data_location : data_location + 5])
+ #           data_location += 5
+ #           retrieve_data = str(input("Would you like to see the next five rows? Yes or No")).lower()
+ #       if retrieve_data == 'no':
+ #           break
+ #       else:
+ #           print("Invalid input. Please enter Yes or No.")
+ #           retrieve_data = str(input("Would you like to see the next five rows? Yes or No")).lower()
 
 def main():
     while True:
@@ -234,7 +234,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        display_data(df)
+ #       display_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
