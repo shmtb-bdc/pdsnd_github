@@ -57,7 +57,7 @@ def get_filters():
 
     print('-'*40)
 
-    #Provides the user confirmation of all three choices in title format, regardless of input case.
+    #Provides the user confirmation of all three choices in title format, regardless of input case. This was an important inclusion to make sure that the user could visually confirm which choice they had entered.
     print('You chose city: {}, month: {}, day: {}.'.format(city.title(), month.title(), day.title()))
 
     print('-'*40)
